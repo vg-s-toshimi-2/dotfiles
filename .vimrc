@@ -52,9 +52,6 @@ set wildmenu
 " 入力中のコマンド表示
 set showcmd
  
-" 折り返さない
-set nowrap
- 
 " 文字列中のHTMLをハイライトする
 let php_htmlInStrings=1
  
@@ -88,9 +85,6 @@ inoremap <> <><LEFT>
 inoremap ?? ??<LEFT>
 inoremap jj <Esc>
  
-"タイムスタンプ入力
-inoremap <F10> <C-R>=strftime("%Y/%m/%d (%a) %H:%M")<CR>
-
 " 改行時の自動コメント挿入禁止
 autocmd Filetype * setlocal formatoptions-=ro
 
