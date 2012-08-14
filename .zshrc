@@ -1,4 +1,4 @@
-#autoload
+# autoload
 autoload -U colors
 colors
 autoload -U compinit
@@ -10,15 +10,15 @@ setopt cdable_vars
 setopt PUSHD_IGNORE_DUPS
 setopt AUTO_PUSHD
  
-#zstyle
+# zstyle
 zstyle ':completion:*' menu select true
 # directory = blue, symbolic link = magenta
 zstyle ':completion:*' list-colors 'di=34;49' 'ln=35;49'
    
-#standard prompt
+# standard prompt
 PROMPT="%{${fg[cyan]}%}%n%{${fg[yellow]}%}-> %{${reset_color}%}"
 
-#right prompt(display git branch)
+# right prompt(display git branch)
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '(%s)-[%b]'
 zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
@@ -30,10 +30,10 @@ precmd () {
 RPROMPT="%1(v|%F{red}%1v%f|)%{${fg[green]}%}[%~]%{${reset_color}%}"
 #RPROMPT="%{${fg[green]}%}[%~]%{${reset_color}%}"
 
-#spell correction prompt
+# spell correction prompt
 SPROMPT="%{${fg[red]}%}%r%{${reset_color}%} is correct? [n,y,a,e]: "
 
-#mysql prompt
+# mysql prompt
 m_color0=$'\e[1;36m'
 m_color1=$'\e[1;33m'
 m_clear=$'\e[0m'
