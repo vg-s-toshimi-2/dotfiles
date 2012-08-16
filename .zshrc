@@ -37,7 +37,7 @@ SPROMPT="%{${fg[red]}%}%r%{${reset_color}%} is correct? [n,y,a,e]: "
 m_color0=$'\e[1;36m'
 m_color1=$'\e[1;33m'
 m_clear=$'\e[0m'
-export MYSQL_PS1="$m_color0\d$m_color1> $m_clear"
+export MYSQL_PS1="$m_color0(\d)$m_color1> $m_clear"
 
 # colorstyle (ls)
 LS_COLORS="di=34;49:ln=35;49"
@@ -56,4 +56,6 @@ alias rm="rm -i"
 
 alias grep="grep --color"
 alias pd="popd"
+
+alias less="/usr/share/vim/vim72/macros/less.sh"
 
