@@ -75,25 +75,3 @@ au InsertLeave * hi StatusLine guifg=While guibg=Blue gui=none ctermfg=White cte
 " ノーマルモード時
 nnoremap bg gT
  
-" 挿入モード時（emacsキーバインド）
-inoremap <C-e> <End>
-inoremap <C-a> <Home>
-inoremap <C-u> <C-o>d0
-inoremap <C-k> <C-o>d$
-inoremap <C-d> <C-o>x
-inoremap <C-f> <C-o>l
-inoremap <C-b> <C-o>h
-
-" おまけ　キーマップ
-inoremap {} {}<LEFT>
-inoremap [] []<LEFT>
-inoremap () ()<LEFT>
-inoremap '' ''<LEFT>
-inoremap "" ""<LEFT>
-inoremap <> <><LEFT>
-inoremap ?? ??<LEFT>
-inoremap jj <Esc>
- 
-" 改行時の自動コメント挿入禁止
-autocmd Filetype * setlocal formatoptions-=ro
-
